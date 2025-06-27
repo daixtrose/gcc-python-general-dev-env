@@ -1,0 +1,65 @@
+FROM gcc:12.2
+
+RUN apt-get update && apt-get install -y \
+    ark \
+    git \
+    glibc-tools \
+    lib32z1 \
+    libacl1 \
+    libapparmor-dev \
+    libattr1 \
+    libbsd0 \
+    libbz2-1.0 \
+    libc6 \
+    libc6-arm64-cross \
+    libc6-armhf-cross \
+    libcairo2 \
+    libcap-dev \
+    libcap2 \
+    libcdt5 \
+    libcgraph6 \
+    libdatrie1 \
+    libexpat1 \
+    libffi7 \
+    libfl2 \
+    libfontconfig1 \
+    libfreetype6 \
+    libfribidi0 \
+    libglib2.0-0 \
+    libgmp10 \
+    libgraphite2-3 \
+    libgvc6 \
+    libharfbuzz0b \
+    liblxc-dev \
+    liblzma5 \
+    liblzo2-2 \
+    libmpc3 \
+    libmpfr6 \
+    libpango \
+    libpangocairo \
+    libpangoft2 \
+    libpathplan4 \
+    libpcre3 \
+    libpixman \
+    libpng16 \
+    libseccomp-dev \
+    libseccomp2 \
+    libthai0 \
+    libuuid1 \
+    libx11-6 \
+    libxau6 \
+    libxcb-render0 \
+    libxcb-shm0 \
+    libxcb1 \
+    libxdmcp6 \
+    libxdot4 \
+    libxext6 \
+    libxml2 \
+    libxrender1 \
+    libzstd1 \    
+    python3-bcrypt \
+    python3-cryptography \
+    python3-nacl \ 
+    subversion \    
+    && rm -rf /var/lib/apt/lists/*
+
